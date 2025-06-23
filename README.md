@@ -1,23 +1,59 @@
-# Plataforma-Web-
-flowchart TD
-    A[Início] --> B[Login do Usuário]
-    B --> C{Tipo de Usuário}
-    
-    C --> D[Super Admin]
-    D --> D1[Gerenciar Usuários e Permissões]
-    
-    C --> E[Financeiro]
-    E --> E1[Acessa módulo "Bazar"]
-    E1 --> E2[Gera QR Code (PIX)]
-    E2 --> E3[Valida Pagamento]
-    E3 --> E4[Registra e Soma Valor do Evento]
-    
-    C --> F[Gestor de Site]
-    F --> F1[Gerencia Conteúdo]
-    F1 --> F2[Publica no Site]
-    
-    C --> G[Aluno (futuro)]
-    G --> G1[Visualiza Conteúdo]
-    
-    A & B & D1 & E4 & F2 & G1 --> H[Execução de Testes Automatizados]
-    H --> I[Fim]
+# 📊 Plataforma Institucional - Laravel + TALL Stack
+
+Este é um projeto em desenvolvimento que visa criar uma plataforma institucional completa, utilizando **Laravel** e o ecossistema **TALL Stack** (Tailwind CSS, Alpine.js, Livewire), com foco em **gestão de conteúdo**, **controle financeiro via PIX** e **controle de usuários por permissões**.
+
+---
+
+## 🚀 Visão Geral
+
+O objetivo principal do projeto é oferecer uma plataforma intuitiva e robusta para instituições que precisam:
+
+- Gerenciar o conteúdo de seu site (notícias, eventos, blog)
+- Organizar e controlar eventos com arrecadação financeira
+- Definir perfis de usuários com permissões específicas
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+- **Laravel** (Back-end PHP)
+- **Livewire** (interatividade em tempo real sem JS pesado)
+- **Tailwind CSS** (design ágil e responsivo)
+- **Alpine.js** (comportamentos front-end simples)
+- **PHPUnit** (testes automatizados)
+
+---
+
+## 🧩 Principais Módulos
+
+### 🔐 Controle de Usuários
+- Super Admin: acesso total
+- Financeiro: gerencia módulo de arrecadação
+- Gestor de Site: gerencia conteúdos do site
+- Alunos (futuro): acesso ao portal de cursos e interações
+
+### 💰 Módulo "Bazar" (Financeiro)
+- Geração de QR Code (PIX) para pagamentos de eventos
+- Validação automática de pagamentos
+- Registro e somatório de valores arrecadados por evento
+
+### 🌐 Front-end do Site
+- Página inicial com blocos de notícias, blog e eventos
+- Páginas internas detalhadas para cada seção
+- Compartilhamento social
+
+---
+
+## 🧪 Testes Automatizados
+
+Este projeto está sendo desenvolvido com foco em qualidade, utilizando **PHPUnit** para testes de:
+
+- Regras de negócio
+- Permissões de acesso
+- Validação de pagamentos
+- Renderização de componentes Livewire
+
+---
+
+## 📁 Estrutura do Projeto (em progresso)
+
