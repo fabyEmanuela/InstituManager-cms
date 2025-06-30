@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-card>
         <x-slot:header>
-            Welcome to the TallStackUI Starter Kit
+              Bem vido a tela inicial
         </x-slot:header>
         <div class="space-y-2">
             <p>

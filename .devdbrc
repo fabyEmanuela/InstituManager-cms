@@ -2,5 +2,9 @@
   {
     "type": "sqlite",
     "path": "c:\\Users\\fabym\\Documents\\tuupa\\painel_cms_laravel\\database\\database.sqlite"
+  },
+  {
+    "type": "sqlite",
+    "path": "c:\\Users\\fabym\\Documents\\tuupa\\InstituManager-cms\\database\\database.sqlite"
   }
 ]
